@@ -7,7 +7,12 @@ const Home: React.FC = () => {
     return (
       <div className="home-container">
         <h1>Please choose a project</h1>
-        <Link to="counter">Counter</Link>
+        <p>
+          <Link to="counter">Counter</Link>
+        </p>
+        <p>
+          <Link to="search">Search</Link>
+        </p>
       </div>
     );
   }

@@ -5,6 +5,7 @@ import "./style.scss";
 
 const Counter = lazy(() => import("./counter"));
 const Home = lazy(() => import("./home"));
+const Search = lazy(() => import("./search"));
 
 const Landing: React.FC = () => {
 
@@ -14,8 +15,9 @@ const Landing: React.FC = () => {
       <div className="pages-body">
         <Suspense fallback={<div>loading</div>}>
           <Routes>
-            <Route path="/counter" element={<Counter />} />
             <Route path="/" element={<Home />} />
+            <Route path="/counter" element={<Counter />} />
+            <Route path="/Search" element={<Search />} />
           </Routes>
         </Suspense>
       </div>
